@@ -1,0 +1,62 @@
+<h1>Productos actualizados en tiempo real</h1>
+
+<div id="product-conteiner"></div>
+
+<div class="conteiner">
+  <h2>Agregar productos</h2>
+
+  <div class="form-conteiner">
+    <form>
+      <input
+        class="style"
+        type="text"
+        id="title"
+        placeholder="Titulo:"
+        required
+      />
+      <input
+        class="style"
+        type="text"
+        id="description"
+        placeholder="Descripcion:"
+        required
+      />
+      <input
+        class="style"
+        type="number"
+        id="price"
+        placeholder="Precio:"
+        required
+      />
+      <input class="style" type="text" id="img" value="Sin Imagen" readonly />
+      <input
+        class="style"
+        type="text"
+        id="code"
+        placeholder="Codigo:"
+        required
+      />
+      <input
+        class="style"
+        type="number"
+        id="stock"
+        placeholder="Stock:"
+        required
+      />
+      <input
+        class="style"
+        type="text"
+        id="category"
+        placeholder="Categoria:"
+        required
+      />
+      <input class="style" type="text" id="status" value="true" readonly />
+      <div class="btn-conteiner">
+        <button class="btn-form" id="btn-send">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+<script src="js/main.js"></script>
